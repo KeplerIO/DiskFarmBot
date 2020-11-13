@@ -1,0 +1,20 @@
+*************************************************
+              ********************
+        DiskFarmBot architectural overview
+              ********************
+*************************************************
+
+==================================================== Technologies & Tools ==================================================
+The application is developed with .NET Core SDK.
+The .NET Core runtime is cross-platform and can run on any PC operating system.
+The application is written in C# and compiled/built to run on the .NET Core runtime, making the application cross-platform.
+    *Code is compiled into bytecode (IL) and is read/ran JIT by the .NET Core runtime,
+    which will execute the bytecode as machine instructions on the machine running it.
+============================================================================================================================
+
+=== Application Data ===
+DiskBotFarm's application data consists of the following:
+    -Images that are saved by taking screenshots of the host machine's screen (these are processed later programatically)
+
+=== Application Data Structure ===
+Each OS has "Special Folders" which are, for example, a Local App Data Folder.
