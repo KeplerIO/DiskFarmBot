@@ -1,2 +1,2 @@
-src\DiskFarmBot.TestEnv\bin
-src\DiskFarmBot.TestEnv\obj
+**/bin
+**/obj
