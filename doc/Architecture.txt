@@ -4,6 +4,8 @@
               ********************
 *************************************************
 
+
+
 ==================================================== Technologies & Tools ==================================================
 The application is developed with .NET Core SDK.
 The .NET Core runtime is cross-platform and can run on any PC operating system.
@@ -12,9 +14,20 @@ The application is written in C# and compiled/built to run on the .NET Core runt
     which will execute the bytecode as machine instructions on the machine running it.
 ============================================================================================================================
 
+
+
+==== A Quick Note: OS File Systems & Special Folders ====
+All operating systems have certain "Special Folders" in common that serve the same purpose regardless of the operating system.
+For example: All operating systems have a folder meant for storing local application data or a MyDocuments folder for the user's personal files.
+It is of the utmost importance that this application consistently creates the Application Data structure in the proper location across all operating systems without any OS specific code.
+
+Local Application Data Folder = serves as a common repository for application-specific data that is used by the current, non-roaming user.
+    Windows: C:\Users\[username]\AppData\Local
+    Linux: 
+
 === Application Data ===
 DiskBotFarm's application data consists of the following:
     -Images that are saved by taking screenshots of the host machine's screen (these are processed later programatically)
 
 === Application Data Structure ===
-Each OS has "Special Folders" which are, for example, a Local App Data Folder.
+
